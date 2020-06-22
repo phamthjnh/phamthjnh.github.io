@@ -1,0 +1,32 @@
+body {
+    max-width: 1000px;
+    text-align: justify;
+    margin: auto;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+img {
+    display: block;
+    max-width: 500px;
+    margin: auto;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+}
+iframe {
+    display: block;
+    width: 640px;
+    height: 360px;
+    margin: auto;
+}
+a:link, a:visited {
+    background-color: rgb(49, 236, 49);
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: green;
+  }
