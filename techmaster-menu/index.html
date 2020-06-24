@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">  
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="container-fluid" id="header">
+        <header>
+            <div class="nav-bar">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="logo-brand">
+                        <a href="https://techmaster.vn/">
+                            <img src="new_logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="parent-menu desktop">
+                        <ul class="list-menu">
+                           <li class="parent-menu-item" onclick="GoToSite(this)" data-href="/khoa-hoc/truc-tuyen">
+                                <a href="https://techmaster.vn/khoa-hoc/truc-tuyen" class="nav-padding">
+                                    <span>Trực tuyến</span>
+                                </a>
+                            </li>
+                            <li class="parent-menu-item" onclick="GoToSite(this)" data-href="/khoa-hoc/phong-lab">
+                                <a href="https://techmaster.vn/khoa-hoc/phong-lab" class="nav-padding">
+                                    <span>Phòng lab</span>
+                                </a>
+                            </li>
+                            <li class="parent-menu-item" onclick="ShowSubMenu(this)" data-dropdown="submenu-dropdown-2">
+                                <a class="nav-padding">
+                                    <span>Lộ trình&ensp;<i class="fas fa-caret-down"></i></span>
+                                </a>
+                                <ul class="dropdown-menu" id="submenu-dropdown-2">
+                                    <a href="https://techmaster.vn/lo-trinh">
+                                        <li><span>Thực tập 9 tháng</span></li>
+                                    </a>
+                                    <a href="https://techmaster.vn/lo-trinh/foundation">
+                                        <li><span>Nền tảng lập trình</span></li>
+                                    </a>
+                                    <a href="https://techmaster.vn/lo-trinh/front-end">
+                                        <li><span>Front End + React</span></li>
+                                    </a>
+                                    <a href="https://techmaster.vn/lo-trinh/mobile">
+                                        <li><span>Di động React Native</span></li>
+                                    </a>
+                                    <a href="https://techmaster.vn/lo-trinh/java-fullstack">
+                                        <li><span>Java Spring Boot FullStack</span></li>
+                                    </a>
+                                </ul>
+                            </li>
+                            <li class="parent-menu-item" onclick="GoToSite(this)" data-href="/san-pham-hoc-vien">
+                                <a href="https://techmaster.vn/san-pham-hoc-vien" class="nav-padding">
+                                    <span>Sản phẩm học viên</span>
+                                </a>
+                            </li>
+                            <li class="parent-menu-item" onclick="GoToSite(this)" data-href="/trungtam/lich-khai-giang">
+                                <a href="https://techmaster.vn/trungtam/lich-khai-giang" class="nav-padding">
+                                    <span>Khai giảng</span>
+                                </a>
+                            </li>
+                            <li class="parent-menu-item" onclick="GoToSite(this)" data-href="/posts">
+                                <a href="https://techmaster.vn/posts" class="nav-padding">
+                                    <span>Blog</span>
+                                </a>
+                            </li>
+                            <li class="parent-menu-item" onclick="GoToSite(this)" data-href="/trai-nghiem">
+                                <a href="https://techmaster.vn/trai-nghiem" class="nav-padding">
+                                    <span>Trải nghiệm</span>
+                                </a>
+                            </li>
+                            <li class="parent-menu-item" onclick="GoToSite(this)" data-href="/viec-lam">
+                                <a href="https://techmaster.vn/viec-lam" class="nav-padding">
+                                    <span>Việc làm</span>
+                                </a>
+                            </li>
+                            <li class="parent-menu-item" onclick="ShowSubMenu(this)" data-dropdown="submenu-dropdown-8">
+                                <a class="nav-padding">
+                                    <span>Chúng tôi <i class="fas fa-caret-down"></i></span>
+                                </a>
+                                <ul class="dropdown-menu" id="submenu-dropdown-8">
+                                    <a href="/trungtam/trung-tam">
+                                        <li><span>Trung tâm</span></li>
+                                    </a>
+                                    <a href="/trungtam/quy-dinh-chung">
+                                        <li><span>Quy định chung</span></li>
+                                    </a>
+                                    <a href="/trungtam/giang-vien">
+                                        <li><span>Giảng viên</span></li>
+                                    </a>
+                                    <a href="/trungtam/huong-dan-mua-khoa-hoc">
+                                        <li><span>Hướng dẫn đăng ký học</span></li>
+                                    </a>
+                                </ul>
+                            </li> 
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+</body>
+
+</html>
