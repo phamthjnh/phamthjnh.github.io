@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    margin: 0;
+}
+p {
+    margin: 0;
+    clear: both;
+}
+
+div{
+    display: block;
+    float: left;
+}
+.redColor {
+    background-color: red;
+}
+.greenColor {
+    background-color: green;
+}
+.blueColor {
+    background-color: blue;
+}
+#red1 {
+    width: 60%;
+    height: 400px;
+}
+#green1 {
+    width: 40%;
+    height: 200px;
+}
+#blue1 {
+    width: 40%;
+    height: 200px;
+}
+#red2 {
+    width: 60%;
+    height: 400px;
+}
+#green2 {
+    width: 40%;
+    height: 200px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 0 0 15px;   
+}
+#blue2 {
+    width: 40%;
+    height: 200px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 0 0 15px;   
+}
+
+#red3 {
+    width: 33.33%;
+    height: 400px;
+}
+#green3 {
+    width: 33.33%;
+    height: 400px;
+}
+#blue3 {
+    width: 33.33%;
+    height: 400px;
+}
+
+#red4 {
+    width: 33.33%;
+    height: 400px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 10px 0 0; 
+}
+#green4 {
+    width: 33.33%;
+    height: 400px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 5px 0 5px; 
+}
+#blue4 {
+    width: 33.33%;
+    height: 400px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 0 0 10px; 
+}
