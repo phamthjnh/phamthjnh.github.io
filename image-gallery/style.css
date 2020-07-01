@@ -7,9 +7,6 @@ body {
     font-size: 16px;
     align-items: center;
 }
-div {
-    display: block;
-}
 header {
     display: block;
     width: 100%;
@@ -40,13 +37,8 @@ a {
 .middle {
     vertical-align: middle;
 }
-#content {
-    margin-top: 15px;
-    max-width: 1000px;
-    margin: auto;
-}
-div {
-    display: block;
+main {
+    width: 100%;
 }
 .pictures {    
     width: 100%;
@@ -59,7 +51,7 @@ a:hover {
 }
 .products {
     display: inline;
-    max-width: 30%;
+    max-width: 33.33%;
 }
 #banner {
     width: 100%;
@@ -82,4 +74,10 @@ li {
 ul {
     background: rgb(24, 158, 255);
     margin: 0;
+}
+#content {
+    overflow: auto;
+    margin-top: 15px;
+    max-width: 1000px;
+    margin: auto;
 }
