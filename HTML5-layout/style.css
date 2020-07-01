@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;}
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    max-width: 1250px;
+    background-color: #fff;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.003em;
+}
+#content {
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+ol {
+    display: block;
+    list-style-position: inside;
+}
+ol li {
+    margin-bottom: 8px;
+}
+aside {
+    margin-top: 2rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+aside div {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #00000020;
+}
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    line-height: 2.5em;
+}
+.techFooter {
+    background-color: #34465c;
+    color: #fff;
+    padding: 15px;
+    margin: 0;
+}
+footer a {
+    color: #919294;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+aside a:hover {
+    text-decoration: underline;
+}
+footer span {
+    color: #919294;
+}
+footer li {
+    font-size: 0.9em;
+}
+footer h4 {
+    font-size: 1.1em;
+}
+h1 {
+    margin-bottom: 15px;
+}
+p {
+    margin-bottom: 0.5rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.75 !important;
+}
+h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+figcaption {
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+}
