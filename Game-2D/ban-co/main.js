@@ -35,3 +35,16 @@ ctx.strokeStyle = "black";
 ctx.lineWidth = "2";
 ctx.rect(50, 50, 560, 560);
 ctx.stroke();
+
+var text=['A','B','C','D','E','F','G','H']
+var num=['8','7','6','5','4','3','2','1']
+ctx.beginPath()
+ctx.fillStyle = 'black';
+ctx.font = "30px time news roman";
+for (var k=0; k<8; k++){
+    ctx.fillText(text[k], 75 + k*70 , 35);
+    ctx.fillText(text[k], 75 + k*70 , 645);
+    ctx.fillText(num[k], 17 , 90 + k*70);
+    ctx.fillText(num[k], 627 , 90 + k*70);
+}
+
