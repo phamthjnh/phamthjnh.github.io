@@ -44,7 +44,7 @@ ctx.font = "30px time news roman";
 for (var k=0; k<8; k++){
     ctx.fillText(text[k], 75 + k*70 , 35);
     ctx.fillText(text[k], 75 + k*70 , 645);
-    ctx.fillText(num[k], 17 , 90 + k*70);
-    ctx.fillText(num[k], 627 , 90 + k*70);
+    ctx.fillText(num[k], 17 , 95 + k*70);
+    ctx.fillText(num[k], 627 , 95 + k*70);
 }
 
