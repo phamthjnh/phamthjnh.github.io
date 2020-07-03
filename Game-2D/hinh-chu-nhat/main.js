@@ -1,6 +1,6 @@
 var canvas = document.querySelector('#canvas')
-canvas.width = 700
-canvas.height = 700
+canvas.width = 600
+canvas.height = 600
 canvas.style.border = '2px solid red'
 var ctx = canvas.getContext('2d')
 
