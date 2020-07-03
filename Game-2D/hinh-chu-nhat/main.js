@@ -22,10 +22,10 @@ class Rect {
 }
 var rect = new Rect(0,0,200,100,'red')
 rect.draw()
-var rect1 = new Rect(200,220,100,150,'blue')
+var rect1 = new Rect(600,0,100,150,'blue')
 rect1.draw()
-var rect2 = new Rect(350,220,250,100,'yellow')
+var rect2 = new Rect(0,600,250,100,'yellow')
 rect2.draw()
-var rect3 = new Rect(400,500,200,50,'green')
+var rect3 = new Rect(500,650,200,50,'green')
 rect3.draw()
 
