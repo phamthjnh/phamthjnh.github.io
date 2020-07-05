@@ -27,7 +27,7 @@ img {
     padding: 3px;
     margin: 3px;
     border:1px solid #dcdcdc;
-    transition: transform 0.2s;
+    transition: transform ease-in-out 0.2s;
 }
 #pictures {
     max-width: 468px;
