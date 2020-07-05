@@ -1,0 +1,43 @@
+html body {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f1f1f1;
+}
+* {
+    box-sizing: border-box;
+}
+#heart {
+    color: #fb7e6f;
+    font-size: 200px;
+    margin: 0;
+    padding: 40px;
+    animation-name: heartBeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+@keyframes heartBeat {
+    25% {transform: scale(1.3);}
+    50% {transform: scale(1);}
+  }
+img {
+    max-width: 150px;
+    padding: 3px;
+    margin: 3px;
+    border:1px solid #dcdcdc;
+    transition: transform 0.1s;
+}
+#pictures {
+    max-width: 468px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+
+img:hover {
+    transform: scale(1.5);
+    background-color: white;
+}
