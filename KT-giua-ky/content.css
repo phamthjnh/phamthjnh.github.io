@@ -65,3 +65,6 @@ a:link, a:visited {
   a:hover, a:active {
     background-color: #697c92;
   }
+  p {
+    text-align: justify;
+  }
