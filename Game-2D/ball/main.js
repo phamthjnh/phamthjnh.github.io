@@ -77,8 +77,8 @@ var k=0;
 addEventListener('keydown', function (event) {
     if (event.keyCode == 32 && k==0) {
         console.log('Start was pressed');
-        ball.dx = 4;
-        ball.dy = 4;
+        ball.dx = 8;
+        ball.dy = 8;
         k=1;
         console.log(k); 
         console.log(event.keyCode); 
