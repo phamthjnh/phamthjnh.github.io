@@ -80,16 +80,12 @@ addEventListener('keydown', function (event) {
         ball.dx = 8;
         ball.dy = 8;
         k=1;
-        console.log(k); 
-        console.log(event.keyCode); 
     }  
 });  
 addEventListener('keyup', function (event) {
     if (event.keyCode == 32 && k==1) {
         console.log('Start was release');
         k=2;
-        console.log(k); 
-        console.log(event.keyCode); 
     }  
 }); 
 addEventListener('keydown', function (event) {
@@ -98,28 +94,23 @@ addEventListener('keydown', function (event) {
         ball.dx = 0;
         ball.dy = 0;
         k=3;
-        console.log(k); 
-        console.log(event.keyCode); 
     }  
 });   
 addEventListener('keyup', function (event) {
     if (event.keyCode == 32 && k==3) {
         console.log('Stop was release');
         k=0;
-        console.log(k); 
-        console.log(event.keyCode); 
     }  
 });  
-
-
-addEventListener("click", function (event) {
-    ball.jump(0, 0);
-});
-
 function animate() {
     requestAnimationFrame(animate);
     c.clearRect(0, 0, canvas.width, canvas.height);
     ball.move();
 }
-
 animate();
+addEventListener("click", function (event) {
+    ball.jump(0, 0);
+    ball.dx=0;
+    ball.dy=0;
+    k=0;
+});
