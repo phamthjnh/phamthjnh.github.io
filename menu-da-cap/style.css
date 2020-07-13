@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+nav.main-menu ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 18px;
+    margin: 0;
+}
+nav.main-menu ul li {
+    padding-right: 25px;
+}
+nav.main-menu a {
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    color: #32323d;
+    line-height: 1.6;
+}
+nav.main-menu>ul>li:hover>a {
+    color: #9877ff;
+}
+nav.main-menu>ul>li:active>a {
+    color: #9877ff;
+}
+div,dl {
+    display: block;
+}
+/* .level2 {
+    display: flex;
+} */
+#top,#chart,#topic {
+    position: relative;
+}
+nav.main-menu .level2{
+    position: absolute;
+    top: 16;
+    left: 0;
+    /* display: block; */
+    width: 600px;
+    padding: 10px 0; 
+    border-radius: 8px;
+    display: none;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.2)  
+}
+nav.main-menu .level2 .column{
+    width: 150px;
+    padding: 0; 
+    float: left;
+}
+nav.main-menu .level2 .column ul{
+    display: inline-block; 
+    padding: 0; 
+}
+nav.main-menu .level2 .column ul p{
+    padding : 0 0 0 15px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #2a2b3f;
+    text-transform: uppercase;
+    line-height: normal;
+}
+nav.main-menu .level2 .column ul li{
+    width: 150px;
+    padding : 0 15px 0 15px;
+}
+nav.main-menu .level2 a{
+    padding : 5px 0;
+}
+nav.main-menu .level2 .column {
+    display: inline-block;   
+}
+nav.main-menu ul li:hover >.level2 {
+   display: block;   
+}
+nav.main-menu .level2 .column ul li:hover{
+    background-color: #efefef;
+}
+.icon {
+    background-image: url(https://zjs.zadn.vn/zmp3-desktop/releases/v0.1.19/images/VIP-1x.svg);
+    display: inline-block;
+    width: 50px;   
+    height: 25px;
+    line-height: 66%;
+}
+#vip {  
+    height: 25px;
+}
+
+nav.menu-lazada {
+    margin-top: 350px;
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif;
+    font-weight: 500;
+    width: 200px;
+    position: relative;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.25);
+    background-color: #fff;
+    z-index: 200;
+}
+nav.menu-lazada ul li a {
+    display: block;
+    padding-left: 8px;
+    height: 27px;
+    line-height: 27px;
+    background-color: transparent;
+}
+nav.menu-lazada ul li a span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 27px;
+    color: #757575;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+nav.menu-lazada ul {
+    list-style-type: none;
+    padding: 8px 0 12px;
+    margin: 0;
+}
+nav.menu-lazada ul li:hover>a {
+    background-color: #eceff1;
+}
+nav.menu-lazada ul li:hover>a>span {
+    color: #f36d00;
+}
+/* nav.menu-lazada ul li:hover>a::after {
+    float: right;
+    content: "\e744";
+} */
+nav.menu-lazada .level2 {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 200px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.25);
+    background-color: #fff;
+    display: none;
+}
+nav.menu-lazada .level3 {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 200px;
+    height: 344px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.25);
+    background-color: #fff;
+    display: none;
+}
+nav.menu-lazada ul li:hover >.level2 {
+    display: block;   
+ }
+ nav.menu-lazada ul li:hover>.level3{
+    display: block;   
+ }
