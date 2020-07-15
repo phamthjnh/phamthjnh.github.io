@@ -132,10 +132,6 @@ nav.menu-lazada ul li:hover>a {
 nav.menu-lazada ul li:hover>a>span {
     color: #f36d00;
 }
-/* nav.menu-lazada ul li:hover>a::after {
-    float: right;
-    content: "\e744";
-} */
 nav.menu-lazada .level2 {
     position: absolute;
     top: 0;

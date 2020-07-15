@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Đăng nhập hoặc đăng ký</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+</head>
+
+<body>
+    <div id="background">
+        <div id="logo">
+            <h1><a href="#"><span></span></a></h1>
+        </div>
+    </div>
+    <div id="content">
+        <div id="login">
+            <div class="header">Đăng nhập gần đây</div>
+            <div class="header_text">Nhấp vào ảnh của bạn hoặc thêm tài khoản.</div>
+        </div>
+        <div id="signup">
+            <div class="header">Tạo tài khoản mới</div>
+            <div class="header_text">Nhanh chóng và dễ dàng.</div>
+            <div id="reg_box">
+                <form>
+                    <div id="fullname">
+                        <input type="text" name="last_name" placeholder="Họ">
+                        <input type="text" name="first_name" placeholder="Tên">
+                    </div>
+                    <div id="email">
+                        <input type="text" name="email" placeholder="Số di động hoặc email">
+                    </div>
+                    <div id="password">
+                        <input type="text" name="password" placeholder="Mật khẩu mới">
+                    </div>
+                    <div id="birthday">
+                        <div id="date">Ngày sinh</div>
+                        <div id="options">
+                            <select name="day">
+                                <option value="0">Ngày</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                            </select>
+                            <select name="month">
+                                <option value="0">Tháng</option>
+                                <option value="7">Tháng 7</option>
+                                <option value="8">Tháng 8</option>
+                                <option value="9">Tháng 9</option>
+                            </select>
+                            <select name="year">
+                                <option value="0">Năm</option>
+                                <option value="1995">1995</option>
+                                <option value="1996">1996</option>
+                                <option value="1997">1997</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="gender_head">Giới tính</div>
+                        <div>
+                            <span class="gender"><input name="gender" type="radio" id="female"><label
+                                    for="female">Nữ</label></span>
+                            <span class="gender"><input name="gender" type="radio" id="male"><label
+                                    for="male">Nam</label></span>
+                            <span class="gender"><input name="gender" type="radio" id="option"><label for="option">Tùy
+                                    chỉnh</label></span>
+                        </div>
+                    </div>
+                    <div id="term">
+                        <p>Bằng cách nhấp vào Đăng ký, bạn đồng ý với <a href="#">Điều khoản</a>, <a href="#">Chính sách
+                                dữ liệu</a> và <a href="#">Chính sách
+                                cookie</a> của chúng tôi. Bạn có thể nhận được thông báo của chúng tôi qua SMS và hủy
+                            nhận bất
+                            kỳ lúc nào.</p>
+                    </div>
+                    <button id="submit" type="submit">Đăng ký</button>
+                    <div id="message"><a href="#">Tạo trang</a> dành cho người nổi tiếng, nhãn hiệu hoặc doanh nghiệp.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
