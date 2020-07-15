@@ -137,6 +137,7 @@ nav.menu-lazada .level2 {
     top: 0;
     left: 200px;
     width: 200px;
+    height: 344px;
     box-shadow: 0 0 2px 0 rgba(0,0,0,.25);
     background-color: #fff;
     display: none;
@@ -151,9 +152,24 @@ nav.menu-lazada .level3 {
     background-color: #fff;
     display: none;
 }
-nav.menu-lazada ul li:hover >.level2 {
+nav.menu-lazada ul li:hover>.level2 {
     display: block;   
  }
- nav.menu-lazada ul li:hover>.level3{
+nav.menu-lazada ul li:hover>.level3{
     display: block;   
+ }
+i {
+    display: block;
+    float: right;
+}
+.fas::before {
+    display: none;
+}
+nav.menu-lazada ul li:hover>a>.fas::before{
+    display: block;
+    float: right;
+    color: #f36d00 ;
+    margin-right: 4px;
+    margin-top: 3px;
+    font-size: 20px;
  }
