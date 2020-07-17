@@ -46,6 +46,7 @@ img {
     transition: 0.5s;
     border-style: solid;
     border-color: white;
+    padding: 5px;
     border-width: 2px;
     border-radius: 5px;
 }
