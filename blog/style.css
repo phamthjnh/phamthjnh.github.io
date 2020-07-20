@@ -180,7 +180,7 @@ img {
 .about .timeline .timeline-detail{
     list-style: none;
 }
-.about .timeline .timeline-detail>li .timeline-img{
+.about .timeline .timeline-detail > li .timeline-img{
     width: 150px;
     height: 150px;
     margin-left: -75px;
@@ -193,7 +193,7 @@ img {
     border-radius: 100%;
     background-color: #fed136;
 }
-.about .timeline .timeline-detail>li .timeline-img img{
+.about .timeline .timeline-detail > li .timeline-img img{
     border-radius: 50%;
     max-width: 100%;
     height: auto;
@@ -257,7 +257,7 @@ img {
     content: "";
     background-color: #e9ecef;
 }
-.timeline>p {
+.timeline > p {
     text-align: center;
     font-size: 20px;
     font-weight: 700;
