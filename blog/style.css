@@ -52,7 +52,7 @@ nav.main-menu a {
     align-content: flex-start;
 }
 .content h1 {
-    max-width: 83.33%;
+    width: 100%;
     font-size: 3rem;
     color: #fff;
     font-weight: 700;
@@ -61,6 +61,7 @@ nav.main-menu a {
     margin-top: 3rem;
 }
 .content p {
+    width: 100%;
     font-size: 1.15rem;
     color: rgba(255, 255, 255, 0.75);
     font-weight: 400;
@@ -238,7 +239,7 @@ img {
     width: 100%;
     min-height: 40rem;
     padding-top: 0;
-    padding-bottom: 3.5rem;
+    padding-bottom: 0;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -259,8 +260,8 @@ img {
 }
 .timeline > p {
     text-align: center;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 700;   
 }
 .timeline h4 {
     margin-top: 0;
