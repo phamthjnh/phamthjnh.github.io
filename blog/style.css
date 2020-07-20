@@ -170,17 +170,17 @@ img {
     color: #f4623a;
 }
 
-.about .timeline .timeline-detail > li .timeline-panel {
+.timeline-panel {
     padding: 0 20px 20px;
     float: left;
     width: 41%;
     text-align: right;
     position: relative; 
 }
-.about .timeline .timeline-detail{
+.timeline-detail{
     list-style: none;
 }
-.about .timeline .timeline-detail > li .timeline-img{
+.timeline-img{
     width: 150px;
     height: 150px;
     margin-left: -75px;
@@ -193,7 +193,7 @@ img {
     border-radius: 100%;
     background-color: #fed136;
 }
-.about .timeline .timeline-detail > li .timeline-img img{
+.timeline-img img{
     border-radius: 50%;
     max-width: 100%;
     height: auto;
@@ -206,7 +206,7 @@ img {
     position: relative;
     margin-bottom: 100px;
 }
-.about .timeline .timeline-detail > li.reverse .timeline-panel {
+.reverse .timeline-panel {
     padding: 0 20px 20px;
     float: right;
     text-align: left;
