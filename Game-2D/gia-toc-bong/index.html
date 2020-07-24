@@ -60,27 +60,17 @@ Bổ xung gia tốc acceleration
 
     /* Bổ xung logic chặn bóng không đi quá tường trái và phải
     */
-    move() {   
-    
-    if (this.isStand) {
-          this.draw();
-          return;
-        }   
+    move() {    
 
     if ((this.x > canvas.width - this.radius - 1) || (this.x + this.dx <= this.radius)) {
         var x = document.getElementById("ball_hit");
         x.play();
         this.dx = - this.dx;
-        if (Math.abs(this.dx) < 0.5) {  
-            this.isStand = true;
-            this.dx = 0;
-          }else {
-            let x = document.getElementById("ball_hit");
-            x.play();
-            console.log('Bóng chạm tường');  
-            this.x = this.x + this.dx;
-          }
       }
+    if (Math.abs(this.dx) < 0.5) {  
+        this.dx = 0;
+      }
+      console.log(this.x,this.dx);
       this.dx = this.dx * suyhao;
       this.x = this.x + this.dx;    
       this.draw();
@@ -102,11 +92,11 @@ Bổ xung gia tốc acceleration
   addEventListener('keydown', function (event) {
     if (event.keyCode == 37) {
       console.log('Left was pressed');
-      ball.dx = -10;
+      ball.dx = -5;
     }
     else if (event.keyCode == 39) {
       console.log('Right was pressed');
-      ball.dx = 10;
+      ball.dx = 5;
     }
   });
 
