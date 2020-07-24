@@ -92,11 +92,11 @@ Bổ xung gia tốc acceleration
   addEventListener('keydown', function (event) {
     if (event.keyCode == 37) {
       console.log('Left was pressed');
-      ball.dx = -5;
+      ball.dx += -5;
     }
     else if (event.keyCode == 39) {
       console.log('Right was pressed');
-      ball.dx = 5;
+      ball.dx += 5;
     }
   });
 
