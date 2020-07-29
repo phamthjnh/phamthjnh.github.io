@@ -54,12 +54,14 @@
         c.fill();
         c.closePath();
       }
-      move() {
+      move(radiusChange,colorChange) {
         this.y -= 2; //Chuyển động tịnh tiến đều từ dưới lên trên
         if (this.y <= -this.radius) {
           //nếu vượt quá bên trên màn hình thì quay lại từ bên dưới
           this.y = canvas.height + this.radius;
           this.x = randomNumber(0,canvas.width);
+          this.radius = radiusChange;
+          this.color = colorChange;
         }
       }
     }
@@ -86,7 +88,9 @@
       c.clearRect(0, 0, canvas.width, canvas.height);
       for (let i = 0; i < numberCircle; i++) {
           ballArray[i].draw();
-          ballArray[i].move();
+          let randomRadius = randomNumber(minRadius, maxRadius);
+          let randomColor = randomNumber(0, color.length);
+          ballArray[i].move(randomRadius,color[randomColor]);
       }
     }   
     animate();
