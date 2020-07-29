@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lập trình bóng bay</title>
+  <style>
+    #canvas {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+
+  <script>
+    const canvas = document.getElementById("canvas");
+    const c = canvas.getContext('2d');
+
+    canvas.width = innerWidth;
+    canvas.height = innerHeight;
+
+    function randomNumber(min, max) {
+                    return Math.ceil(Math.random() * (max - min) + min)
+                }
+
+    let color = ["#072448", "#54d2d2", "#ffcb00", "#f8aa4b","#ff6150","#a84632","#1c00f2","#f200e2","#32a852","#ff0022"]
+    let minRadius = 10
+    //Giới hạn bán kính lớn nhất
+    let maxRadius = 30
+    // Số hình tròn sẽ được vẽ
+    var numberCircle = 3
+    let randomColor = randomNumber(0, color.length)
+    let randomStroke = randomNumber(0, color.length)
+
+    class Ball {
+      constructor(x,y,r,color) {
+        this.radius = r;
+        this.color = color;
+        this.x = x;
+        this.y = y;
+      }
+      draw() {
+        c.beginPath();
+        c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+        c.fillStyle = this.color;
+        c.fill();
+        c.closePath();
+      }
+      move() {
+        this.y -= 2; //Chuyển động tịnh tiến đều từ dưới lên trên
+        if (this.y <= -this.radius) {
+          //nếu vượt quá bên trên màn hình thì quay lại từ bên dưới
+          this.y = canvas.height + this.radius;
+          this.x = randomNumber(0,canvas.width);
+        }
+      }
+    }
+    let ballArray=[];
+    for (let i = 0; i < numberCircle; i++) {
+        let randomX = randomNumber(0, canvas.width);
+        let randomY = randomNumber(0, canvas.height);
+        let randomRadius = randomNumber(minRadius, maxRadius);
+        let randomColor = randomNumber(0, color.length);
+        let ball = new Ball(randomX,randomY,randomRadius,color[randomColor]);
+        ballArray.push(ball);
+    }
+    addEventListener('click', function(event) {
+        let randomX = randomNumber(0, canvas.width);
+        let randomY = randomNumber(0, canvas.height);
+        let randomRadius = randomNumber(minRadius, maxRadius);
+        let randomColor = randomNumber(0, color.length)
+        let ball = new Ball(randomX,canvas.height,randomRadius,color[randomColor]);
+        ballArray.push(ball); 
+        numberCircle ++;      
+    })
+    function animate() {
+      requestAnimationFrame(animate);
+      c.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < numberCircle; i++) {
+          ballArray[i].draw();
+          ballArray[i].move();
+      }
+    }   
+    animate();
+
+  </script>
+</body>
+
+</html>
