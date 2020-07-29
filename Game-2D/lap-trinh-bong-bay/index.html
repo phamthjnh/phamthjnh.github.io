@@ -36,7 +36,7 @@
     //Giới hạn bán kính lớn nhất
     let maxRadius = 30
     // Số hình tròn sẽ được vẽ
-    var numberCircle = 3
+    let numberCircle = 3
     let randomColor = randomNumber(0, color.length)
     let randomStroke = randomNumber(0, color.length)
 
@@ -75,13 +75,13 @@
         ballArray.push(ball);
     }
     addEventListener('click', function(event) {
+        numberCircle ++;   
         let randomX = randomNumber(0, canvas.width);
         let randomY = randomNumber(0, canvas.height);
         let randomRadius = randomNumber(minRadius, maxRadius);
         let randomColor = randomNumber(0, color.length)
         let ball = new Ball(randomX,canvas.height,randomRadius,color[randomColor]);
-        ballArray.push(ball); 
-        numberCircle ++;      
+        ballArray.push(ball);    
     })
     function animate() {
       requestAnimationFrame(animate);
