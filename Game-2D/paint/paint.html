@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paint</title>
+    <link rel="stylesheet" href="paint.css">
+</head>
+<body>
+    <div id="container">
+        <div id="tool">
+            <div id="color_tool">
+                <button class="color_btn" id="btn_color1" color="red"></button>
+                <button class="color_btn" id="btn_color2" color="blue"></button>
+                <button class="color_btn" id="btn_color3" color="green"></button>
+                <button class="color_btn" id="btn_color4" color="yellow"></button>
+                <button class="color_btn" id="btn_color5" color="pink"></button>
+                <button class="color_btn color_btn_active" id="btn_color6" color="black"></button>
+            </div>
+            <div id="control_tool">
+                <button class="control_btn btn_eraser" id="erase"><span>Tẩy</span></button>
+                <button class="control_btn btn_reset" id="reset"><span>Reset</span></button>
+            </div>
+            <div id="size_tool">
+                <button class="size_btn" size="6"><span class="rectangle" id="size1" ></span></button>
+                <button class="size_btn" size="5"><span class="rectangle" id="size2" ></span></button>
+                <button class="size_btn" size="4"><span class="rectangle" id="size3" ></span></button>
+                <button class="size_btn" size="3"><span class="rectangle" id="size4" ></span></button>
+                <button class="size_btn size_btn_active" size="2"><span class="rectangle" id="size5" ></span></button>
+            </div>
+        </div>
+        <div id="paint_canvas">
+            <canvas id="canvas" width='960px' height='600px'></canvas>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
