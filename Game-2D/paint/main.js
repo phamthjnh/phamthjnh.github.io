@@ -41,7 +41,7 @@ btnEraser.addEventListener('click',function(){
 })
 canvas.onmousedown = (event) => {
     isDraw = true;
-    document.getElementsByTagName("body")[0].style.cursor = "url('https://phamthjnh.github.io/Game-2D/paint/img/pen.svg'), auto";
+    document.getElementsByTagName("body")[0].style.cursor = "url('http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur'), auto";
     x = event.offsetX;
     y = event.offsetY;
 
